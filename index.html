@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Fantasy Premiership</title>
+    <meta charset = "UTF-8">
+    <meta name = "author" content = "Alex Maclean">
+    <meta name = "description" content = "The Fantasy Premiership League Website">
+    <link rel = "icon" href = "images/logo.png">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/icons.css">
+    <link rel = "stylesheet" href = "css/fonts.css">
+    <script src = "scripts/switch.js"></script>
+    <script src = "scripts/scroll.js"></script>
+    <script src = "scripts/select.js"></script>
+    <script src = "scripts/expand.js"></script>
+  </head>
+  <body>
+    <div class = "navigation">
+      <div class = "uppernav">
+        <a class = "navlink current" onclick = "scrollContent(0)"><i class = "fa fa-home"></i>HOME</a>
+        <a class = "navlink decomp" onclick = "scrollContent(1)"><i class = "fa fa-question-circle-o"></i>ABOUT</a>
+        <div class = "lowernav">
+          <a class = "navlink" onclick = "scrollContent(6)"><i class = "fa fa-info"></i>INFORMATION</a>
+          <a class = "navlink" onclick = "scrollContent(7)"><i class = "fa fa-book"></i>BYLAWS</a>
+          <a class = "navlink" onclick = "scrollContent(8)"><i class = "fa fa-id-card-o"></i>MEMBERS</a>
+          <a class = "navlink" onclick = "scrollContent(9)"><i class = "fa fa-list-alt"></i>APPLICATION</a>
+        </div>
+        <a class = "navlink decomp" onclick = "scrollContent(2)"><i class = "fa fa-calendar"></i>SEASON</a>
+        <div class = "lowernav">
+          <a class = "navlink" onclick = "scrollContent(10)"><i class = "fa fa-id-badge"></i>TEAMS</a>
+          <a class = "navlink" onclick = "scrollContent(11)"><i class = "fa fa-ticket"></i>MATCHUPS</a>
+          <a class = "navlink" onclick = "scrollContent(12)"><i class = "fa fa-tasks"></i>SCOREBOARD</a>
+          <a class = "navlink" onclick = "scrollContent(13)"><i class = "fa fa-list-ol"></i>STANDINGS</a>
+          <a class = "navlink" onclick = "scrollContent(14)"><i class = "fa fa-area-chart"></i>PROJECTIONS</a>
+          <a class = "navlink" onclick = "scrollContent(15)"><i class = "fa fa-list"></i>SCHEDULE</a>
+          <a class = "navlink" onclick = "scrollContent(16)"><i class = "fa fa-sitemap"></i>BRACKET</a>
+          <a class = "navlink" onclick = "scrollContent(17)"><i class = "fa fa-exchange"></i>ACTIVITY</a>
+          <a class = "navlink" onclick = "scrollContent(18)"><i class = "fa fa-clock-o"></i>LIVE</a>
+        </div>
+        <a class = "navlink decomp" onclick = "scrollContent(3)"><i class = "fa fa-history"></i>HISTORY</a>
+        <div class = "lowernav">
+          <a class = "navlink" onclick = "scrollContent(19)"><i class = "fa fa-pie-chart"></i>STATISTICS</a>
+          <a class = "navlink" onclick = "scrollContent(20)"><i class = "fa fa-bar-chart"></i>COMPARISONS</a>
+          <a class = "navlink" onclick = "scrollContent(21)"><i class = "fa fa-table"></i>TABLES</a>
+          <a class = "navlink" onclick = "scrollContent(22)"><i class = "fa fa-th"></i>DRAFTS</a>
+          <a class = "navlink" onclick = "scrollContent(23)"><i class = "fa fa-trophy"></i>RECORDS</a>
+          <a class = "navlink" onclick = "scrollContent(24)"><i class = "fa fa-picture-o"></i>GALLERY</a>
+        </div>
+        <a class = "navlink" onclick = "scrollContent(4)"><i class = "fa fa-at"></i>SOCIAL</a>
+        <a class = "navlink" onclick = "scrollContent(5)"><i class = "fa fa-envelope-o"></i>CONTACT</a>
+        <a class = "navlink theme" onclick = "switchTheme()"><i class = "fa fa-lightbulb-o"></i>THEME</a>
+      </div>
+    </div>
+    <div class = "content">
+      <div class = "scroller prev">
+        <a onclick = "scrollContent('-')"><i class = "fa fa-angle-double-up"></i></a>
+      </div>
+      <div class = "container home current">
+        <img src = "images/logo.png" alt = "logo">
+        <h1>THE <span>FANTASY</span><br>PREMIERSHIP</h1>
+      </div>
+      <div class = "container about">
+        <h3>ABOUT</h3>
+        <p>The Fantasy Premiership is an ESPN redraft league, split into three eight-team divisions with yearly promotion and relegation. The divisions feature independent player pools for management, but are commissioned collectively and observe identical rulesets.</p>
+        <p>Follow the links below to access up-to-date league information, league bylaws, league members, and the league membership application.</p>
+        <div class = "buttons">
+          <a onclick = "scrollContent(6)">INFORMATION</a>
+          <a onclick = "scrollContent(7)">BYLAWS</a>
+          <a onclick = "scrollContent(8)">MEMBERS</a>
+          <a onclick = "scrollContent(9)">APPLICATION</a>
+        </div>
+      </div>
+      <div class = "container season">
+        <h3>SEASON</h3>
+        <p>The Fantasy Premiership runs yearly seasons from August to January, drafting prior to NFL Week 01 and concluding the playoffs during NFL Weeks 16-17. The information referenced below may not be available during offseason months.</p>
+        <p>Follow the links below to access real-time matchup scoreboards, division standings, placement projections, team schedules, and all transaction activity.</p>
+        <div class = "buttons">
+          <a onclick = "scrollContent(10)">TEAMS</a>
+          <a onclick = "scrollContent(11)">MATCHUPS</a>
+          <a onclick = "scrollContent(12)">SCOREBOARD</a>
+          <a onclick = "scrollContent(13)">STANDINGS</a>
+          <a onclick = "scrollContent(14)">PROJECTIONS</a>
+          <a onclick = "scrollContent(15)">SCHEDULE</a>
+          <a onclick = "scrollContent(16)">BRACKET</a>
+          <a onclick = "scrollContent(17)">ACTIVITY</a>
+          <a onclick = "scrollContent(18)">LIVE</a>
+        </div>
+      </div>
+      <div class = "container history">
+        <h3>HISTORY</h3>
+        <p>The Fantasy Premiership aggregates data from each division yearly, resulting in robust career performance metrics for all past and present members. In tandem with snapshot views of past seasons, the league's history can be preserved in extreme detail.</p>
+        <p>Follow the links below to access season-sorted career statistics, division tables, past drafts, and a photo gallery.</p>
+        <div class = "buttons">
+          <a onclick = "scrollContent(19)">STATISTICS</a>
+          <a onclick = "scrollContent(20)">COMPARISONS</a>
+          <a onclick = "scrollContent(21)">TABLES</a>
+          <a onclick = "scrollContent(22)">DRAFTS</a>
+          <a onclick = "scrollContent(23)">RECORDS</a>
+          <a onclick = "scrollContent(24)">GALLERY</a>
+        </div>
+      </div>
+      <div class = "container social">
+        <h3>SOCIAL</h3>
+        <p>The Fantasy Premiership facilitates communication both within and between league divisions via a private Discord server, to which league members are individually invited. At this time, the server is not open to nonmembers under usual circumstances.</p>
+        <p>League buy-ins and pay-outs are coordinated through Venmo, with a dedicated account operated by the league commissioner. All transactions are performed by Venmo's request feature to ensure proper payment amounts and destinations.</p>
+        <p>Follow <a href = "" target = "_blank"><span>@TheFantasyPremiership</span></a> on Twitter for league updates and season commentary.</p>
+      </div>
+      <div class = "container contact">
+        <h3>CONTACT</h3>
+      </div>
+      <div class = "container information">
+        <h3>INFORMATION</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(0)"><i class = "fa fa-dollar"></i></a>
+              <a class = "selectlink" onclick = "selectItem(1)"><i class = "fa fa-sort"></i></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(0)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item payment">
+              PAYMENT
+            </div>
+            <div class = "item transfers">
+              TRANSFERS
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container bylaws">
+        <h3>BYLAWS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick="selectItem(2)"><i class = "fa fa-eye"></i></a>
+              <a class = "selectlink" onclick="selectItem(3)"><i class = "fa fa-download"></i></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(1)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item view">
+              VIEW
+            </div>
+            <div class = "item download">
+              DOWNLOAD
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container members">
+        <h3>MEMBERS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(4)"><b>D1</b></a>
+              <a class = "selectlink" onclick = "selectItem(5)"><b>D2</b></a>
+              <a class = "selectlink" onclick = "selectItem(6)"><b>D3</b></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(2)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container application">
+        <h3>APPLICATION</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(7)"><i class = "fa fa-check-square-o"></i></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(3)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item complete">
+              COMPLETE
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container teams">
+        <h3>TEAMS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink decomp" onclick = "selectItem(8)">D1</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(45)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(46)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(47)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(48)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(49)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(50)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(51)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(52)">XX</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(9)">D2</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(53)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(54)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(55)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(56)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(57)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(58)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(59)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(60)">XX</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(10)">D3</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(61)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(62)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(63)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(64)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(65)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(66)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(67)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(68)">XX</a>
+              </div>
+              <a class = "selectlink resize" onclick = "expandWrapper(4)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+            <div class = "item team">
+              T1
+            </div>
+            <div class = "item team">
+              T2
+            </div>
+            <div class = "item team">
+              T3
+            </div>
+            <div class = "item team">
+              T4
+            </div>
+            <div class = "item team">
+              T5
+            </div>
+            <div class = "item team">
+              T6
+            </div>
+            <div class = "item team">
+              T7
+            </div>
+            <div class = "item team">
+              T8
+            </div>
+            <div class = "item team">
+              T1
+            </div>
+            <div class = "item team">
+              T2
+            </div>
+            <div class = "item team">
+              T3
+            </div>
+            <div class = "item team">
+              T4
+            </div>
+            <div class = "item team">
+              T5
+            </div>
+            <div class = "item team">
+              T6
+            </div>
+            <div class = "item team">
+              T7
+            </div>
+            <div class = "item team">
+              T8
+            </div>
+            <div class = "item team">
+              T1
+            </div>
+            <div class = "item team">
+              T2
+            </div>
+            <div class = "item team">
+              T3
+            </div>
+            <div class = "item team">
+              T4
+            </div>
+            <div class = "item team">
+              T5
+            </div>
+            <div class = "item team">
+              T6
+            </div>
+            <div class = "item team">
+              T7
+            </div>
+            <div class = "item team">
+              T8
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container matchups">
+        <h3>MATCHUPS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink decomp" onclick = "selectItem(11)">D1</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(69)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(70)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(71)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(72)">XX-XX</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(12)">D2</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(73)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(74)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(75)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(76)">XX-XX</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(13)">D3</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(77)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(78)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(79)">XX-XX</a>
+                <a class = "selectlink" onclick = "selectItem(80)">XX-XX</a>
+              </div>
+              <a class = "selectlink resize" onclick = "expandWrapper(5)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+            <div class = "item matchup">
+              T1-T8
+            </div>
+            <div class = "item matchup">
+              T2-T7
+            </div>
+            <div class = "item matchup">
+              T3-T6
+            </div>
+            <div class = "item matchup">
+              T4-T5
+            </div>
+            <div class = "item matchup">
+              T1-T8
+            </div>
+            <div class = "item matchup">
+              T2-T7
+            </div>
+            <div class = "item matchup">
+              T3-T6
+            </div>
+            <div class = "item matchup">
+              T4-T5
+            </div>
+            <div class = "item matchup">
+              T1-T8
+            </div>
+            <div class = "item matchup">
+              T2-T7
+            </div>
+            <div class = "item matchup">
+              T3-T6
+            </div>
+            <div class = "item matchup">
+              T4-T5
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container scoreboard">
+        <h3>SCOREBOARD</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(14)">D1</a>
+              <a class = "selectlink" onclick = "selectItem(15)">D2</a>
+              <a class = "selectlink" onclick = "selectItem(16)">D3</a>
+              <a class = "selectlink resize" onclick = "expandWrapper(6)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container standings">
+        <h3>STANDINGS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(17)">D1</a>
+              <a class = "selectlink" onclick = "selectItem(18)">D2</a>
+              <a class = "selectlink" onclick = "selectItem(19)">D3</a>
+              <a class = "selectlink resize" onclick = "expandWrapper(7)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container projections">
+        <h3>PROJECTIONS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(20)">D1</a>
+              <a class = "selectlink" onclick = "selectItem(21)">D2</a>
+              <a class = "selectlink" onclick = "selectItem(22)">D3</a>
+              <a class = "selectlink resize" onclick = "expandWrapper(8)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container schedule">
+        <h3>SCHEDULE</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink decomp" onclick = "selectItem(23)">D1</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(81)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(82)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(83)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(84)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(85)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(86)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(87)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(88)">XX</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(24)">D2</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(89)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(90)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(91)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(92)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(93)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(94)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(95)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(96)">XX</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(25)">D3</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(97)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(98)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(99)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(100)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(101)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(102)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(103)">XX</a>
+                <a class = "selectlink" onclick = "selectItem(104)">XX</a>
+              </div>
+              <a class = "selectlink resize" onclick = "expandWrapper(9)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+            <div class = "item team">
+              T1
+            </div>
+            <div class = "item team">
+              T2
+            </div>
+            <div class = "item team">
+              T3
+            </div>
+            <div class = "item team">
+              T4
+            </div>
+            <div class = "item team">
+              T5
+            </div>
+            <div class = "item team">
+              T6
+            </div>
+            <div class = "item team">
+              T7
+            </div>
+            <div class = "item team">
+              T8
+            </div>
+            <div class = "item team">
+              T1
+            </div>
+            <div class = "item team">
+              T2
+            </div>
+            <div class = "item team">
+              T3
+            </div>
+            <div class = "item team">
+              T4
+            </div>
+            <div class = "item team">
+              T5
+            </div>
+            <div class = "item team">
+              T6
+            </div>
+            <div class = "item team">
+              T7
+            </div>
+            <div class = "item team">
+              T8
+            </div>
+            <div class = "item team">
+              T1
+            </div>
+            <div class = "item team">
+              T2
+            </div>
+            <div class = "item team">
+              T3
+            </div>
+            <div class = "item team">
+              T4
+            </div>
+            <div class = "item team">
+              T5
+            </div>
+            <div class = "item team">
+              T6
+            </div>
+            <div class = "item team">
+              T7
+            </div>
+            <div class = "item team">
+              T8
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container bracket">
+        <h3>BRACKET</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(26)">D1</a>
+              <a class = "selectlink" onclick = "selectItem(27)">D2</a>
+              <a class = "selectlink" onclick = "selectItem(28)">D3</a>
+              <a class = "selectlink resize" onclick = "expandWrapper(10)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container activity">
+        <h3>ACTIVITY</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(29)">D1</a>
+              <a class = "selectlink" onclick = "selectItem(30)">D2</a>
+              <a class = "selectlink" onclick = "selectItem(31)">D3</a>
+              <a class = "selectlink resize" onclick = "expandWrapper(11)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container live">
+        <h3>LIVE</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(32)"><i class = "fa fa-eye"></i></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(12)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item scores">
+              SCORES
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container statistics">
+        <h3>STATISTICS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(33)"><i class = "fa fa-eye"></i></a>
+              <a class = "selectlink" onclick = "selectItem(34)"><i class = "fa fa-download"></i></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(13)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item view">
+              VIEW
+            </div>
+            <div class = "item download">
+              DOWNLOAD
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container comparisons">
+        <h3>COMPARISONS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(35)"><i class = "fa fa-wrench"></i></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(14)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item configure">
+                CONFIGURE
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container tables">
+        <h3>TABLES</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink decomp" onclick = "selectItem(36)">D1</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(105)">22/23</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(37)">D2</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(106)">22/23</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(38)">D3</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(107)">22/23</a>
+              </div>
+              <a class = "selectlink resize" onclick = "expandWrapper(15)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+            <div class = "item season">
+              22/23
+            </div>
+            <div class = "item season">
+              22/23
+            </div>
+            <div class = "item season">
+              22/23
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container drafts">
+        <h3>DRAFTS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink decomp" onclick = "selectItem(39)">D1</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(108)">22/23</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(40)">D2</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(109)">22/23</a>
+              </div>
+              <a class = "selectlink decomp" onclick = "selectItem(41)">D3</a>
+              <div class = "lowerselect">
+                <a class = "selectlink" onclick = "selectItem(110)">22/23</a>
+              </div>
+              <a class = "selectlink resize" onclick = "expandWrapper(16)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item division">
+              D1
+            </div>
+            <div class = "item division">
+              D2
+            </div>
+            <div class = "item division">
+              D3
+            </div>
+            <div class = "item season">
+              22/23
+            </div>
+            <div class = "item season">
+              22/23
+            </div>
+            <div class = "item season">
+              22/23
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container records">
+        <h3>RECORDS</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(42)"><i class = "fa fa-eye"></i></a>
+              <a class = "selectlink" onclick = "selectItem(43)"><i class = "fa fa-download"></i></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(17)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item view">
+              VIEW
+            </div>
+            <div class = "item download">
+              DOWNLOAD
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container gallery">
+        <h3>GALLERY</h3>
+        <div class = "wrapper">
+          <div class = "selection">
+            <div class = "upperselect">
+              <a class = "selectlink" onclick = "selectItem(44)"><i class = "fa fa-eye"></i></a>
+              <a class = "selectlink resize" onclick = "expandWrapper(18)"><i class = "fa fa-expand"></i></a>
+            </div>
+          </div>
+          <div class = "substance">
+            <div class = "item view">
+              VIEW
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "scroller next">
+        <a onclick = "scrollContent('+')"><i class = "fa fa-angle-double-down"></i></a>
+      </div>
+    </div>
+  </body>
+</html>

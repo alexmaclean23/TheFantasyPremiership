@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  transition: 0.25s;
+  color: var(--contrast);
+}
+
+.lite {
+  --primary: #DDD;
+  --secondary: #CCC;
+  --tertiary: #BBB;
+  --contrast: #222;
+  --accent: #39B54A;
+}
+
+.dark {
+  --primary: #222;
+  --secondary: #333;
+  --tertiary: #444;
+  --contrast: #DDD;
+  --accent: #39B54A;
+}
+
+.navigation {
+  background-color: var(--secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75px;
+}
+
+.navigation:hover {
+  width: 500px;
+}
+
+.navigation:hover .navlink {
+  width: 250px;
+}
+
+.navigation:hover ~ .content {
+  width: calc(100% - 250px);
+}
+
+.navlink {
+  display: block;
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+  text-align: left;
+  overflow: hidden;
+  font-size: 1em;
+  letter-spacing: 0.125em;
+  text-decoration: none;
+}
+
+.navlink i {
+  width: 75px;
+  text-align: center;
+  transform: scale(1.25);
+}
+
+.navlink:hover i {
+  transform: scale(1.5);
+}
+
+.navlink.current {
+  background-color: var(--accent);
+}
+
+.navigation:hover:has(.navlink.decomp:hover) ~ .content {
+  width: calc(100% - 500px);
+}
+
+.navlink.theme {
+  position: absolute;
+  bottom: 0;
+}
+
+.navlink:hover {
+  background-color: var(--tertiary);
+  cursor: pointer;
+}
+
+.navlink.current:hover {
+  background-color: var(--accent);
+}
+
+.lowernav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 250px;
+  height: 100%;
+}
+
+.navigation:hover:has(.lowernav:hover) ~ .content {
+  width: calc(100% - 500px);
+}
+
+.navlink.decomp:hover + .lowernav {
+  display: block;
+}
+
+.lowernav:hover {
+  display: block;
+}
+
+.navlink.decomp.current:has(+ .lowernav:hover) {
+  background-color: var(--accent);
+}
+
+.navlink.decomp:has(+ .lowernav:hover) {
+  background-color: var(--tertiary);
+}
+
+.navlink.decomp:has(+ .lowernav:hover) i {
+  transform: scale(1.5);
+}
+
+.navlink.decomp:has(+ .lowernav .navlink.current) {
+  background-color: var(--accent);
+}
+
+.content {
+  background-color: var(--primary);
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 75px);
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.scroller {
+  position: absolute;
+  height: 75px;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  line-height: 75px;
+}
+
+.scroller.prev {
+  top: 0;
+}
+
+.scroller.next {
+  bottom: 0;
+}
+
+.scroller:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.scroller a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.scroller:hover i {
+  transform: scale(1.125);
+}
+
+.content:has(.container.home.current) .scroller.prev,
+.content:has(.container.information.current) .scroller.prev,
+.content:has(.container.teams.current) .scroller.prev,
+.content:has(.container.statistics.current) .scroller.prev {
+  top: -75px;
+}
+
+.content:has(.container.contact.current) .scroller.next,
+.content:has(.container.application.current) .scroller.next,
+.content:has(.container.activity.current) .scroller.next,
+.content:has(.container.gallery.current) .scroller.next {
+  bottom: -75px;
+}
+
+.container {
+  position: absolute;
+  height: calc(100% - 150px);
+  width: 100%;
+  top: 75px;
+  left: 100%;
+  justify-content: top;
+  align-content: left;
+  overflow: hidden;
+}
+
+.container.current {
+  left: 0;
+}
+
+.container.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  font-size: 6em;
+  letter-spacing: 0.125em;
+}
+
+.container span {
+  color: var(--accent);
+}
+
+.container h3 {
+  font-size: 4em;
+  color: var(--accent);
+  letter-spacing: 0.125em;
+  padding: 75px 150px 0 150px;
+}
+
+.container p {
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  padding: 25px 150px 0 150px;
+}
+
+.container a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px 150px 0 150px;
+}
+
+.container .buttons a {
+  font-size: 1.5em;
+  letter-spacing: 0.125em;
+  background-color: var(--secondary);
+  padding: 15px;
+  margin: 0 10px 10px 0;
+}
+
+.container .buttons a:hover {
+  background-color: var(--tertiary);
+}
+
+.wrapper {
+  border: 2px solid var(--accent);
+  position: absolute;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  height: calc(100% - 4em - 125px);
+  width: calc(100% - 300px);
+  top: calc(4em + 50px);
+  left: 150px;
+}
+
+.wrapper.zoomed {
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+  top: 0;
+  left: 0;
+}
+
+.selection {
+  background-color: var(--secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75px;
+  overflow: hidden;
+}
+
+.selection:hover {
+  width: 150px;
+}
+
+.selection:hover .selectlink {
+  width: 75px;
+}
+
+.selection:hover ~ .substance {
+  width: calc(100% - 75px);
+}
+
+.selectlink {
+  display: block;
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+  text-align: center;
+  overflow: hidden;
+  font-size: 0.5em;
+  letter-spacing: 0em;
+  text-decoration: none;
+}
+
+.selectlink i {
+  width: 75px;
+  text-align: center;
+  transform: scale(1.25);
+}
+
+.selectlink:hover i {
+  transform: scale(1.5);
+}
+
+.selectlink.current {
+  background-color: var(--accent);
+}
+
+.selection:hover:has(.selectlink.decomp:hover) ~ .substance {
+  width: calc(100% - 150px);
+}
+
+.selectlink.resize {
+  position: absolute;
+  bottom: 0;
+}
+
+.selectlink:hover {
+  background-color: var(--tertiary);
+  cursor: pointer;
+}
+
+.selectlink.current:hover {
+  background-color: var(--accent);
+}
+
+.lowerselect {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 75px;
+  height: 100%;
+}
+
+.selection:hover:has(.lowerselect:hover) ~ .substance {
+  width: calc(100% - 150px);
+}
+
+.selectlink.decomp:hover + .lowerselect {
+  display: block;
+}
+
+.lowerselect:hover {
+  display: block;
+}
+
+.selectlink.decomp.current:has(+ .lowerselect:hover) {
+  background-color: var(--accent);
+}
+
+.selectlink.decomp:has(+ .lowerselect:hover) {
+  background-color: var(--tertiary);
+}
+
+.selectlink.decomp:has(+ .lowerselect:hover) i {
+  transform: scale(1.5);
+}
+
+.selectlink.decomp:has(+ .lowerselect .selectlink.current) {
+  background-color: var(--accent);
+}
+
+.substance {
+  background-color: var(--primary);
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 75px);
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  justify-content: top;
+  align-content: left;
+  overflow: hidden;
+}
+
+.item.current {
+  left: 0;
+}
+
+.item h3 {
+  font-size: 4em;
+  color: var(--accent);
+  letter-spacing: 0.125em;
+  padding: 75px 150px 0 150px;
+}
+
+.item p {
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  padding: 25px 150px 0 150px;
+}
+
+.item a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.item span {
+  color: var(--accent);
+}
+
+.item .buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px 150px 0 150px;
+}
+
+.item .buttons a {
+  font-size: 1.5em;
+  letter-spacing: 0.125em;
+  background-color: var(--secondary);
+  padding: 15px;
+  margin: 0 10px 10px 0;
+}
+
+.item .buttons a:hover {
+  background-color: var(--tertiary);
+}
