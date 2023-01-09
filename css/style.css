@@ -376,8 +376,7 @@
   width: calc(100% - 75px);
   top: 0;
   right: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .item {
@@ -388,7 +387,8 @@
   left: 100%;
   justify-content: top;
   align-content: left;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .item.current {
@@ -396,16 +396,16 @@
 }
 
 .item h3 {
-  font-size: 4em;
+  font-size: 1.5em;
   color: var(--accent);
   letter-spacing: 0.125em;
-  padding: 75px 150px 0 150px;
+  padding: 75px 75px 0 75px;
 }
 
 .item p {
-  font-size: 2em;
+  font-size: 1em;
   letter-spacing: 0.05em;
-  padding: 25px 150px 0 150px;
+  padding: 25px 75px 0 75px;
 }
 
 .item a {
