@@ -381,12 +381,13 @@
 
 .item {
   position: absolute;
-  height: 100%;
+  height: calc(100% - 75px);
   width: 100%;
   top: 0;
   left: 100%;
   justify-content: top;
   align-content: left;
+  padding-bottom: 75px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -434,4 +435,14 @@
 
 .item .buttons a:hover {
   background-color: var(--tertiary);
+}
+
+.item .member {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100px;
+  margin: 25px 75px 0 75px;
+  border: 2px solid var(--tertiary);
 }
