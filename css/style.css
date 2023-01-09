@@ -7,6 +7,10 @@
   color: var(--contrast);
 }
 
+*::-webkit-scrollbar {width: 20px;}
+*::-webkit-scrollbar-track {background: var(--primary);}
+*::-webkit-scrollbar-thumb {background-color: var(--tertiary); border-radius: 0px; border: 5px solid var(--primary);}
+
 .lite {
   --primary: #DDD;
   --secondary: #CCC;
