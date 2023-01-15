@@ -446,7 +446,32 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100px;
   margin: 25px 75px 0 75px;
   border: 2px solid var(--tertiary);
+}
+
+.item .member img {
+  aspect-ratio: 1;
+  height: 150px;
+  margin: 25px;
+}
+
+.item .member h4 {
+  font-size: 1.125em;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  margin: 25px;
+}
+
+.item .member h5 {
+  font-size: 0.5em;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  margin: 10px 25px;
+}
+
+.item .member div:last-child {
+  position: absolute;
+  right: 75px;
+  text-align: right;
 }
