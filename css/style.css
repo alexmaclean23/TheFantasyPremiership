@@ -487,6 +487,7 @@
 
 .item thead td {
   padding: 10px 50px;
+  cursor: pointer;
 }
 
 .item table td {
