@@ -392,8 +392,7 @@
   justify-content: top;
   align-content: left;
   padding-bottom: 75px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 .item.current {
@@ -474,4 +473,25 @@
   position: absolute;
   right: 75px;
   text-align: right;
+}
+
+.item table {
+  border-collapse: collapse;
+  margin: 25px 75px 0 75px;
+}
+
+.item thead {
+  font-weight: bold;
+  padding: 10px 50px;
+}
+
+.item thead td {
+  padding: 10px 50px;
+}
+
+.item table td {
+  font-size: 1em;
+  letter-spacing: 0.125em;
+  border: 1px solid var(--tertiary);
+  text-align: center;
 }
