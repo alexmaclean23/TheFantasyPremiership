@@ -496,3 +496,64 @@
   border: 1px solid var(--tertiary);
   text-align: center;
 }
+
+.item .compare {
+  position: absolute;
+  width: calc(50% - 75px);
+  top: calc(1.5em + 110px);
+}
+
+.item .compare:first-of-type {
+  text-align: left;
+  left: 75px;
+}
+
+.item .compare:last-of-type {
+  text-align: right;
+  right: 75px;
+}
+
+.item .compare:first-of-type tr {
+  border-right: 2px solid var(--tertiary);
+}
+
+.item .compare:last-of-type tr {
+  border-left: 2px solid var(--tertiary);
+}
+
+.item .compare table {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+.item .compare tr td:first-of-type {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.item .compare tr td:last-of-type {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.item .compare:first-of-type tr td:last-of-type {
+  letter-spacing: unset;
+}
+
+.item .compare:last-of-type tr td:first-of-type {
+  letter-spacing: unset;
+}
+
+.item .compare thead tr:first-of-type td {
+  text-align: center;
+  cursor: unset;
+  padding: 10px;
+}
+
+.item select {
+  background-color: var(--secondary);
+  width: 100%;
+  padding: 10px;
+  font-size: 0.75em;
+}
