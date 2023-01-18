@@ -1,6 +1,6 @@
 function assortTable(n) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById("myTable2");
+    table = document.getElementById("statistics");
     switching = true;
     // Set the sorting direction to ascending:
     dir = "asc";
