@@ -557,3 +557,7 @@
   padding: 10px;
   font-size: 0.75em;
 }
+
+.drafts .item thead td {
+  cursor: unset;
+}
