@@ -558,6 +558,6 @@
   font-size: 0.75em;
 }
 
-.drafts .item thead td {
+.drafts .item thead td, .records .item thead td {
   cursor: unset;
 }
