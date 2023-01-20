@@ -561,3 +561,12 @@
 .drafts .item thead td, .records .item thead td {
   cursor: unset;
 }
+
+.item .photos {
+  width: calc(100% - 150px);
+  margin: 25px 75px 0 75px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
