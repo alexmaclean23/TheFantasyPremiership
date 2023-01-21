@@ -294,85 +294,4195 @@
           </div>
           <div class = "substance">
             <div class = "item division">
-              D1
+              <h3>FIRST DIVISION TEAMS</h3>
+              <div class = "buttons">
+                <a onclick = "selectItem(45)">TEAM 1</a>
+                <a onclick = "selectItem(46)">TEAM 2</a>
+                <a onclick = "selectItem(47)">TEAM 3</a>
+                <a onclick = "selectItem(48)">TEAM 4</a>
+                <a onclick = "selectItem(49)">TEAM 5</a>
+                <a onclick = "selectItem(50)">TEAM 6</a>
+                <a onclick = "selectItem(51)">TEAM 7</a>
+                <a onclick = "selectItem(52)">TEAM 8</a>
+              </div>
             </div>
             <div class = "item division">
-              D2
+              <h3>SECOND DIVISION TEAMS</h3>
+              <div class = "buttons">
+                <a onclick = "selectItem(53)">TEAM 1</a>
+                <a onclick = "selectItem(54)">TEAM 2</a>
+                <a onclick = "selectItem(55)">TEAM 3</a>
+                <a onclick = "selectItem(56)">TEAM 4</a>
+                <a onclick = "selectItem(57)">TEAM 5</a>
+                <a onclick = "selectItem(58)">TEAM 6</a>
+                <a onclick = "selectItem(59)">TEAM 7</a>
+                <a onclick = "selectItem(60)">TEAM 8</a>
+              </div>
             </div>
             <div class = "item division">
-              D3
+              <h3>THIRD DIVISION TEAMS</h3>
+              <div class = "buttons">
+                <a onclick = "selectItem(61)">TEAM 1</a>
+                <a onclick = "selectItem(62)">TEAM 2</a>
+                <a onclick = "selectItem(63)">TEAM 3</a>
+                <a onclick = "selectItem(64)">TEAM 4</a>
+                <a onclick = "selectItem(65)">TEAM 5</a>
+                <a onclick = "selectItem(66)">TEAM 6</a>
+                <a onclick = "selectItem(67)">TEAM 7</a>
+                <a onclick = "selectItem(68)">TEAM 8</a>
+              </div>
             </div>
             <div class = "item team">
-              T1
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d1_t1">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d1_t1', 0)">#</td>
+                    <td onclick = "assortTable('d1_t1', 1)">SLOT</td>
+                    <td onclick = "assortTable('d1_t1', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d1_t1', 3)">PTS</td>
+                    <td onclick = "assortTable('d1_t1', 4)">AVG</td>
+                    <td onclick = "assortTable('d1_t1', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T2
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d1_t2">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d1_t2', 0)">#</td>
+                    <td onclick = "assortTable('d1_t2', 1)">SLOT</td>
+                    <td onclick = "assortTable('d1_t2', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d1_t2', 3)">PTS</td>
+                    <td onclick = "assortTable('d1_t2', 4)">AVG</td>
+                    <td onclick = "assortTable('d1_t2', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T3
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d1_t3">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d1_t3', 0)">#</td>
+                    <td onclick = "assortTable('d1_t3', 1)">SLOT</td>
+                    <td onclick = "assortTable('d1_t3', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d1_t3', 3)">PTS</td>
+                    <td onclick = "assortTable('d1_t3', 4)">AVG</td>
+                    <td onclick = "assortTable('d1_t3', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T4
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d1_t4">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d1_t4', 0)">#</td>
+                    <td onclick = "assortTable('d1_t4', 1)">SLOT</td>
+                    <td onclick = "assortTable('d1_t4', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d1_t4', 3)">PTS</td>
+                    <td onclick = "assortTable('d1_t4', 4)">AVG</td>
+                    <td onclick = "assortTable('d1_t4', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T5
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d1_t5">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d1_t5', 0)">#</td>
+                    <td onclick = "assortTable('d1_t5', 1)">SLOT</td>
+                    <td onclick = "assortTable('d1_t5', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d1_t5', 3)">PTS</td>
+                    <td onclick = "assortTable('d1_t5', 4)">AVG</td>
+                    <td onclick = "assortTable('d1_t5', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T6
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d1_t6">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d1_t6', 0)">#</td>
+                    <td onclick = "assortTable('d1_t6', 1)">SLOT</td>
+                    <td onclick = "assortTable('d1_t6', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d1_t6', 3)">PTS</td>
+                    <td onclick = "assortTable('d1_t6', 4)">AVG</td>
+                    <td onclick = "assortTable('d1_t6', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T7
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d1_t7">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d1_t7', 0)">#</td>
+                    <td onclick = "assortTable('d1_t7', 1)">SLOT</td>
+                    <td onclick = "assortTable('d1_t7', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d1_t7', 3)">PTS</td>
+                    <td onclick = "assortTable('d1_t7', 4)">AVG</td>
+                    <td onclick = "assortTable('d1_t7', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T8
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d1_t8">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d1_t8', 0)">#</td>
+                    <td onclick = "assortTable('d1_t8', 1)">SLOT</td>
+                    <td onclick = "assortTable('d1_t8', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d1_t8', 3)">PTS</td>
+                    <td onclick = "assortTable('d1_t8', 4)">AVG</td>
+                    <td onclick = "assortTable('d1_t8', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T1
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d2_t1">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d2_t1', 0)">#</td>
+                    <td onclick = "assortTable('d2_t1', 1)">SLOT</td>
+                    <td onclick = "assortTable('d2_t1', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d2_t1', 3)">PTS</td>
+                    <td onclick = "assortTable('d2_t1', 4)">AVG</td>
+                    <td onclick = "assortTable('d2_t1', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T2
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d2_t2">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d2_t2', 0)">#</td>
+                    <td onclick = "assortTable('d2_t2', 1)">SLOT</td>
+                    <td onclick = "assortTable('d2_t2', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d2_t2', 3)">PTS</td>
+                    <td onclick = "assortTable('d2_t2', 4)">AVG</td>
+                    <td onclick = "assortTable('d2_t2', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T3
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d2_t3">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d2_t3', 0)">#</td>
+                    <td onclick = "assortTable('d2_t3', 1)">SLOT</td>
+                    <td onclick = "assortTable('d2_t3', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d2_t3', 3)">PTS</td>
+                    <td onclick = "assortTable('d2_t3', 4)">AVG</td>
+                    <td onclick = "assortTable('d2_t3', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T4
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d2_t4">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d2_t4', 0)">#</td>
+                    <td onclick = "assortTable('d2_t4', 1)">SLOT</td>
+                    <td onclick = "assortTable('d2_t4', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d2_t4', 3)">PTS</td>
+                    <td onclick = "assortTable('d2_t4', 4)">AVG</td>
+                    <td onclick = "assortTable('d2_t4', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T5
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d2_t5">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d2_t5', 0)">#</td>
+                    <td onclick = "assortTable('d2_t5', 1)">SLOT</td>
+                    <td onclick = "assortTable('d2_t5', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d2_t5', 3)">PTS</td>
+                    <td onclick = "assortTable('d2_t5', 4)">AVG</td>
+                    <td onclick = "assortTable('d2_t5', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T6
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d2_t6">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d2_t6', 0)">#</td>
+                    <td onclick = "assortTable('d2_t6', 1)">SLOT</td>
+                    <td onclick = "assortTable('d2_t6', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d2_t6', 3)">PTS</td>
+                    <td onclick = "assortTable('d2_t6', 4)">AVG</td>
+                    <td onclick = "assortTable('d2_t6', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T7
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d2_t7">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d2_t7', 0)">#</td>
+                    <td onclick = "assortTable('d2_t7', 1)">SLOT</td>
+                    <td onclick = "assortTable('d2_t7', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d2_t7', 3)">PTS</td>
+                    <td onclick = "assortTable('d2_t7', 4)">AVG</td>
+                    <td onclick = "assortTable('d2_t7', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T8
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d2_t8">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d2_t8', 0)">#</td>
+                    <td onclick = "assortTable('d2_t8', 1)">SLOT</td>
+                    <td onclick = "assortTable('d2_t8', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d2_t8', 3)">PTS</td>
+                    <td onclick = "assortTable('d2_t8', 4)">AVG</td>
+                    <td onclick = "assortTable('d2_t8', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T1
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d3_t1">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d3_t1', 0)">#</td>
+                    <td onclick = "assortTable('d3_t1', 1)">SLOT</td>
+                    <td onclick = "assortTable('d3_t1', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d3_t1', 3)">PTS</td>
+                    <td onclick = "assortTable('d3_t1', 4)">AVG</td>
+                    <td onclick = "assortTable('d3_t1', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T2
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d3_t2">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d3_t2', 0)">#</td>
+                    <td onclick = "assortTable('d3_t2', 1)">SLOT</td>
+                    <td onclick = "assortTable('d3_t2', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d3_t2', 3)">PTS</td>
+                    <td onclick = "assortTable('d3_t2', 4)">AVG</td>
+                    <td onclick = "assortTable('d3_t2', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T3
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d3_t3">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d3_t3', 0)">#</td>
+                    <td onclick = "assortTable('d3_t3', 1)">SLOT</td>
+                    <td onclick = "assortTable('d3_t3', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d3_t3', 3)">PTS</td>
+                    <td onclick = "assortTable('d3_t3', 4)">AVG</td>
+                    <td onclick = "assortTable('d3_t3', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T4
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d3_t4">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d3_t4', 0)">#</td>
+                    <td onclick = "assortTable('d3_t4', 1)">SLOT</td>
+                    <td onclick = "assortTable('d3_t4', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d3_t4', 3)">PTS</td>
+                    <td onclick = "assortTable('d3_t4', 4)">AVG</td>
+                    <td onclick = "assortTable('d3_t4', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T5
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d3_t5">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d3_t5', 0)">#</td>
+                    <td onclick = "assortTable('d3_t5', 1)">SLOT</td>
+                    <td onclick = "assortTable('d3_t5', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d3_t5', 3)">PTS</td>
+                    <td onclick = "assortTable('d3_t5', 4)">AVG</td>
+                    <td onclick = "assortTable('d3_t5', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T6
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d3_t6">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d3_t6', 0)">#</td>
+                    <td onclick = "assortTable('d3_t6', 1)">SLOT</td>
+                    <td onclick = "assortTable('d3_t6', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d3_t6', 3)">PTS</td>
+                    <td onclick = "assortTable('d3_t6', 4)">AVG</td>
+                    <td onclick = "assortTable('d3_t6', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T7
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d3_t7">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d3_t7', 0)">#</td>
+                    <td onclick = "assortTable('d3_t7', 1)">SLOT</td>
+                    <td onclick = "assortTable('d3_t7', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d3_t7', 3)">PTS</td>
+                    <td onclick = "assortTable('d3_t7', 4)">AVG</td>
+                    <td onclick = "assortTable('d3_t7', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class = "item team">
-              T8
+              <h3>{{TEAM}}</h3>
+              <div class = "metrics">
+                <div>
+                  <p>{{MANAGER}}</p>
+                  <p>{{CONFERENCE}}</p>
+                  <p>{{RECORD}}</p>
+                </div>
+                <div>
+                  <p>{{WAIVER}}</p>
+                  <p>{{ACQUISITIONS}}</p>
+                  <p>{{TRADES}}</p>
+                </div>
+              </div>
+              <table id = "d3_t8">
+                <thead>
+                  <tr>
+                    <td onclick = "assortTable('d3_t8', 0)">#</td>
+                    <td onclick = "assortTable('d3_t8', 1)">SLOT</td>
+                    <td onclick = "assortTable('d3_t8', 2)">PLAYER</td>
+                    <td onclick = "assortTable('d3_t8', 3)">PTS</td>
+                    <td onclick = "assortTable('d3_t8', 4)">AVG</td>
+                    <td onclick = "assortTable('d3_t8', 5)">POS RK</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>QB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>RB</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>WR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>TE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>FLX</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>09</td>
+                    <td>DST</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>K</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>BE</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>IR</td>
+                    <td>{{PLAYER NAME}}</td>
+                    <td>{{PTS}}</td>
+                    <td>{{AVG}}</td>
+                    <td>{{POS RK}}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
