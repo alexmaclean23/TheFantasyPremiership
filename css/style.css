@@ -570,3 +570,20 @@
   flex-wrap: wrap;
   gap: 25px;
 }
+
+.item .metrics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.item .metrics div:first-of-type {
+  margin-right: auto;
+  text-align: left;
+}
+
+.item .metrics div:last-of-type {
+  margin-left: auto;
+  text-align: right;
+}
