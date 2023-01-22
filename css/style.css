@@ -603,3 +603,35 @@
 .matchups .lowerselect a {
   line-height: 25px;
 }
+
+.item .board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 25px 75px 75px 75px;
+}
+
+.item .board .game {
+  background-color: var(--secondary);
+  padding: 25px;
+}
+
+.item .board .game table {
+  margin: 0;
+  width: 100%;
+}
+
+.item .board .game table td {
+  border: none;
+  text-align: left;
+}
+
+.item .board .game table td {
+  font-size: smaller;
+  padding: 5px;
+}
+
+.item .board .game table tr:first-of-type td:last-of-type {
+  width: 10%;
+}
