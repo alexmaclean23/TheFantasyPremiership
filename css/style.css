@@ -558,7 +558,7 @@
   font-size: 0.75em;
 }
 
-.drafts .item thead td, .records .item thead td {
+.drafts .item thead td, .records .item thead td, .matchup thead td {
   cursor: unset;
 }
 
@@ -586,4 +586,20 @@
 .item .metrics div:last-of-type {
   margin-left: auto;
   text-align: right;
+}
+
+.matchup table {
+  width: calc(100% - 150px);
+}
+
+.matchup table tr td:nth-of-type(4) {
+  border-right: 4px solid var(--tertiary);
+}
+
+.matchup table tr td:nth-of-type(5) {
+  border-left: 4px solid var(--tertiary);
+}
+
+.matchups .lowerselect a {
+  line-height: 25px;
 }
