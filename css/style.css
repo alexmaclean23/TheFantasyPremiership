@@ -672,3 +672,16 @@
 .item .transaction div:nth-child(3) {
   text-align: right;
 }
+
+.bracket .board {
+  flex-wrap: nowrap;
+  padding: 25px 75px 0 75px;
+}
+
+.bracket .winners {
+  border: 2px solid var(--contrast)
+}
+
+.bracket .losers {
+  border: 2px dashed var(--contrast)
+}
