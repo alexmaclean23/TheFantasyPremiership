@@ -633,3 +633,42 @@
 .item .board .game table tr:first-of-type td:last-of-type {
   width: 10%;
 }
+
+.item .transaction {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 75px 0 75px;
+  border: 2px solid var(--tertiary);
+}
+
+.item .transaction h4 {
+  font-size: 1.125em;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  margin: 25px;
+}
+
+.item .transaction h5 {
+  font-size: 0.75em;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  margin: 10px 25px;
+}
+
+.item .transaction div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item .transaction div:nth-child(2) {
+  margin-bottom: 15px;
+}
+
+.item .transaction div:nth-child(3) {
+  text-align: right;
+}
