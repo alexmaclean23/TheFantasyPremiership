@@ -560,7 +560,7 @@
   font-size: 0.75em;
 }
 
-.drafts .item thead td, .records .item thead td, .matchups .item thead td, .schedule .item thead td {
+.drafts .item thead td, .records .item thead td, .matchups .item thead td, .schedules .item thead td {
   cursor: unset;
 }
 
