@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
-  /* transition: 0.25s; */
+  transition: 0.25s;
   color: var(--contrast);
 }
 
@@ -179,7 +179,7 @@
 
 .content:has(.container.contact.current) .scroller.next,
 .content:has(.container.application.current) .scroller.next,
-.content:has(.container.activity.current) .scroller.next,
+.content:has(.container.live.current) .scroller.next,
 .content:has(.container.gallery.current) .scroller.next {
   bottom: -75px;
 }
@@ -187,7 +187,7 @@
 .container {
   position: absolute;
   height: calc(100% - 150px);
-  width: 100%;
+  width: 0%;
   top: 75px;
   left: 100%;
   justify-content: top;
@@ -196,6 +196,7 @@
 }
 
 .container.current {
+  width: 100%;
   left: 0;
 }
 
@@ -386,7 +387,7 @@
 .item {
   position: absolute;
   height: calc(100% - 75px);
-  width: 100%;
+  width: 0%;
   top: 0;
   left: 100%;
   justify-content: top;
@@ -396,6 +397,7 @@
 }
 
 .item.current {
+  width: 100%;
   left: 0;
 }
 
@@ -586,10 +588,6 @@
 .item .metrics div:last-of-type {
   margin-left: auto;
   text-align: right;
-}
-
-.matchup table {
-  width: calc(100% - 150px);
 }
 
 .matchup table tr td:nth-of-type(4) {
