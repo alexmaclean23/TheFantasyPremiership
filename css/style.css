@@ -179,7 +179,7 @@
 
 .content:has(.container.contact.current) .scroller.next,
 .content:has(.container.application.current) .scroller.next,
-.content:has(.container.activity.current) .scroller.next,
+.content:has(.container.live.current) .scroller.next,
 .content:has(.container.gallery.current) .scroller.next {
   bottom: -75px;
 }
