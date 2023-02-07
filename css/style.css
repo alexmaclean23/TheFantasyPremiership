@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
-  transition: 0.25s;
+  transition: 0s;
   color: var(--contrast);
 }
 
