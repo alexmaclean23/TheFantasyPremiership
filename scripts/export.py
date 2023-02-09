@@ -19,7 +19,7 @@ def get_teams():
         team = []
         team.append(str(data)[str(data).find("firstName", str(data).find(data["teams"][index]["owners"][0]) - 100) + 13 : str(data).find("id", str(data).find(data["teams"][index]["owners"][0]) - 100) - 4][:1].upper() + str(data)[str(data).find("firstName", str(data).find(data["teams"][index]["owners"][0]) - 100) + 13 : str(data).find("id", str(data).find(data["teams"][index]["owners"][0]) - 100) - 4][1:] + " " + str(data)[str(data).find("lastName", str(data).find(data["teams"][index]["owners"][0]) - 100) + 12 : str(data).find("notificationSettings", str(data).find(data["teams"][index]["owners"][0]) - 100) - 4][:1].upper() + str(data)[str(data).find("lastName", str(data).find(data["teams"][index]["owners"][0]) - 100) + 12 : str(data).find("notificationSettings", str(data).find(data["teams"][index]["owners"][0]) - 100) - 4][1:])
         team.append(data["teams"][index]["name"].replace("  ", " ").strip())
-        team.append(str(data["teams"][index]["leagueId"]).replace("0", "East").replace("1", "West"))
+        team.append(str(data["teams"][index]["divisionId"]).replace("0", "East").replace("1", "West"))
         team.append(str(data["teams"][index]["record"]["overall"]["wins"]) + "-" + str(data["teams"][index]["record"]["overall"]["losses"]))
         team.append(data["teams"][index]["waiverRank"])
         team.append(data["teams"][index]["transactionCounter"]["acquisitions"])
@@ -264,8 +264,8 @@ def get_brackets():
 def get_activity():
     pass
 
-#get_teams()
-get_rosters()
+get_teams()
+#get_rosters()
 #get_matchups()
 #get_scoreboards()
 #get_standings()
