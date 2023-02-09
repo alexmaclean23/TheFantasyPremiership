@@ -32,18 +32,18 @@ def get_teams():
         print(team)
         print()
 
-def get_rosters(): # Change this to single API call, replace team details with team id
+def get_rosters():
     global rosters
-    for index in range(1, 9):
-        data = requests.get(url, params = {"view": "mRoster", "forTeamId": "{}".format(index)}, verify=False).json()
+    data = requests.get(url, params = {"view": "mRoster"}, verify=False).json()
+    for index in range(len(data["teams"])):
         roster = [None] * 18
-        for num in range(len(data["teams"][0]["roster"]["entries"])):
+        for num in range(len(data["teams"][index]["roster"]["entries"])):
             player = []
-            player.append(data["teams"][0]["roster"]["entries"][num]["lineupSlotId"])
-            player.append(data["teams"][0]["roster"]["entries"][num]["playerPoolEntry"]["player"]["fullName"])
-            player.append(round(data["teams"][0]["roster"]["entries"][num]["playerPoolEntry"]["player"]["stats"][3]["appliedTotal"], 1))
-            player.append(round(data["teams"][0]["roster"]["entries"][num]["playerPoolEntry"]["player"]["stats"][3]["appliedAverage"], 1))
-            player.append(data["teams"][0]["roster"]["entries"][num]["playerPoolEntry"]["ratings"]["0"]["positionalRanking"])
+            player.append(data["teams"][index]["roster"]["entries"][num]["lineupSlotId"])
+            player.append(data["teams"][index]["roster"]["entries"][num]["playerPoolEntry"]["player"]["fullName"])
+            player.append(round(data["teams"][index]["roster"]["entries"][num]["playerPoolEntry"]["player"]["stats"][3]["appliedTotal"], 1))
+            player.append(round(data["teams"][index]["roster"]["entries"][num]["playerPoolEntry"]["player"]["stats"][3]["appliedAverage"], 1))
+            player.append(data["teams"][index]["roster"]["entries"][num]["playerPoolEntry"]["ratings"]["0"]["positionalRanking"])
             if player[0] == "":
                 print("ERROR: No lineup slot received.")
             elif player[0] == 0:
@@ -99,6 +99,7 @@ def get_rosters(): # Change this to single API call, replace team details with t
                 pass
         for num in range(len(roster)):
             roster[num].pop(0)
+        roster.insert(0, data["teams"][index]["id"])
         rosters.append(roster)
     '''TESTING'''
     for roster in rosters:
@@ -264,7 +265,7 @@ def get_brackets():
 def get_activity():
     pass
 
-get_teams()
+#get_teams()
 #get_rosters()
 #get_matchups()
 #get_scoreboards()
